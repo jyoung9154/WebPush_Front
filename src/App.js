@@ -1,6 +1,4 @@
-// App.js
 import React, { useState } from 'react';
-// import "./firebase-messaging-sw.js";
 import { requestPermission } from './firebase-messaging-sw.js';
 
 function App() {
@@ -14,10 +12,10 @@ function App() {
 
   return (
     <div>
-      <h1>Notification Example</h1>
-      <p>Notification permission status: {notificationPermission}</p>
+      <h1>Web Push 예제</h1>
+      <p> 알림 권한 상태 : {notificationPermission}</p>
       <button onClick={handleButtonClick}>
-        Allow Notifications
+        알림 권한 요청하기 
       </button>
     </div>
   );
